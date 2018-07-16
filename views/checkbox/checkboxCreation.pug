@@ -1,0 +1,47 @@
+extends ../layout
+
+block content
+    div#CreaExoCheck
+
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Exercice de checkbox
+                        .form-inline
+                            .form-group.col-md-10
+                                label(for='XXXXX') Nombre de lignes à créer :
+                                select.form-control.ml-2
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                                    option 6
+                                    option 7
+                                    option 8
+                                    option 9
+                                    option 10
+                            button.btn.btn-info(type='submit', value='Validation') Validation
+                        hr
+                        
+                        .form-group
+                            label(for='XXXXX') Choisir l'unité associée
+                            select.form-control
+                                each truc in unity
+                                    option=truc.title
+                        .form-group
+                            label(for='exampleFormControlTextarea1') Consigne de l'exercice
+                            textarea#exampleFormControlTextarea1.form-control(rows='3')
+                        .form-row
+                            .form-group.col-md-6
+                                .input-group
+                                    input#customFile.custom-file-input(type='file', required='')
+                                    label.custom-file-label(for='customFile') Choose file....
+                            .form-group.col-md-6
+                                .input-group
+                                    input.form-control(type='text', placeholder='Texte correspondant')
+                        button.btn.btn-info.float-right(type='submit', value='Validation') Annuler
+                        button.btn.btn-info.float-right(type='submit', value='Validation') Brouillon
+                        button.btn.btn-info.float-right(type='submit', value='Validation') Validation
+                        button.btn.btn-info.float-right(type='submit', value='Validation') Apercu

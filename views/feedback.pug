@@ -1,0 +1,40 @@
+extends ./layout
+
+block content
+    div#Feedbacks
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Les feedbacks
+                        .form-row
+                            .form-group.col-md-6
+                                label(for='XXXXX') Choisir l'unité associée
+                                select.form-control
+                                    each feedback in feedbacks
+                                        option=feedback.Unit.title
+                            .form-group.col-md-6
+                                label(for='XXXXX') Depuis
+                                select.form-control
+                                    option 1 jour
+                                    option 1 semaine
+                                    option 1 mois
+                                    option Le début
+                            a.btn.btn-info.offset-md-11(role='button', href='/backoffice/feedbacks/trier') Validation
+                        hr
+                        
+                        each feedback in feedbacks
+                            .container
+                                h5 Nom de l'utilisateur :
+                                p=`${feedback.User.firstname} ${feedback.User.name}`
+                                h5 Unité :
+                                p= feedback.Unit.title
+                                h5 Commentaire :
+                                p=feedback.comment
+                                h5 Note :
+                                p=feedback.note
+                                h5 Date du commentaire:
+                                p=feedback.createdAt
+                                hr
+                        
+

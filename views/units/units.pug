@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+    div#Units
+        .row.mx-auto
+                .col-md-12.pt-2.pb-5
+                    .card.border-light
+                        .card-body 
+                            h3 Gestion des unités existantes
+                            a.btn.btn-info.mb-4(role='button', href='/backoffice/units/creationUnits') Création d'une nouvelle unité
+                            table.table
+                                thead
+                                    tr
+                                        th(scope='col') Id
+                                        th(scope='col') Titre
+                                        th(scope='col') Tescription
+                                        th(scope='col') Miniature
+                                        th(scope='col') Date de création
+                                        th(scope='col') Date de publication
+                                        th(scope='col') Modification
+                                        th(scope='col') Suppression
+                                tbody   
+                                    each unit in unity
+                                        tr
+                                            td=unit.id
+                                            td=unit.title
+                                            td=unit.description
+                                            td=unit.thumbnail
+                                            td=unit.createdAt
+                                            td
+                                            td 
+                                                a.badge.badge-warning.py-1(href=`/backoffice/units/modificationUnit/${unit.id}` role='button') Modification
+                                            td
+                                                a.badge.badge-danger.py-1(href=`/backoffice/units/supprimerUnit/${unit.id}` role='button') Suppression
+                    

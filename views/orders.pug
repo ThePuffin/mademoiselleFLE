@@ -1,0 +1,48 @@
+extends ./layout
+
+block content
+    div#Orders
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Commandes
+                        .form-row
+                        form(method="GET", action=`/backoffice/orders/filtrer/`, enctype="multipart/form-data")                        
+                            .form-group
+                                label(for='unite') Choisir l'unité associée
+                                select.form-control(name="title")
+                                    option(selected='' value=null ) Toutes...
+                                    each unit in units
+                                        option(value=unit.id)=unit.title
+
+                            
+                            .form-group
+                                label Barre de recherche
+                                 <input class="form-control mr-sm-2" type="search" placeholder="Utilisateur recherché" aria-label="Search">
+
+                            //- .form-group
+                            //-     label(for='utilisateur') Choisir l'utilisateur
+                            //-     select.form-control(name="name")
+                            //-         option(id="utilisateur"  selected='' value = null) Tous...
+                            //-         each user in users
+                            //-             option(value=`${user.id}`)=`${user.firstname}, ${user.name}`
+                            button.btn.btn-info.float-right.mb-4(type="submit") Filtrer
+
+                        table.table.table-hover
+                            thead
+                                tr
+                                    th(scope='col') Nom
+                                    th(scope='col') Prénom
+                                    th(scope='col') Unité achetée
+                                    th(scope='col') Commande
+                                    th(scope='col') Profil utilisateur
+                            tbody
+                                each commande in commandes
+                                    tr
+                                        td=commande.User.name
+                                        td=commande.User.firstname
+                                        td=commande.Unit.title
+                                        td=commande.bill
+                                        td
+                                            a.badge.badge-info(href=`/backoffice/users/user/${commande.users_id}`) Voir    

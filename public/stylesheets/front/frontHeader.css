@@ -1,0 +1,71 @@
+#sansmarges {
+  padding-left: 0;
+  padding-right: 0;
+}
+#nav {
+  color: #ebb000;
+}
+.nav-item {
+  color: #008f99;
+  margin-right: 10px;
+}
+
+.menudroite {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  margin-right: 30px;
+  color: #008f99;
+  font-family: Montserrat;
+  font-weight: 200;
+}
+.menudroite a {
+  color: #eb6e80;
+  font-size: 100%;
+}
+.dropdown-item:hover {
+  color: #eb6e80;
+}
+.navbar-expand-lg {
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  display: flex;
+  align-items: right;
+}
+
+.retourhome {
+  margin-right: 1%;
+  margin-left: 1%;
+  font-size: 77%;
+}
+.item {
+  outline-style: none;
+  text-decoration: none;
+  outline: none;
+}
+.fa-home {
+  color: #ebb000;
+  font-size: 150%;
+}
+.fa-home:hover {
+  color: #eb6e80;
+}
+#navbarDropdownMenuLink.nav-link.dropdown-toggle,
+.nav-link {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+a.dropdown-item {
+  font-size: 18px;
+  font-family: Montserrat;
+}
+a.nav-link.disabled {
+  color: #ebb000;
+}
+
+#logonavbar {
+  width: 10%;
+  position: relative;
+}

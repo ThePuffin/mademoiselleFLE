@@ -1,0 +1,89 @@
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+h3 {
+  font-family: Montserrat Alternates;
+  font-size: 32px;
+  margin-top: 20px;
+  text-align: center;
+  color: #008f99;
+}
+h4 {
+  font-family: Montserrat Alternates;
+  font-size: 22px;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.card-body {
+  text-align: center;
+}
+ul.list-group.list-group-flush {
+  text-align: center;
+}
+.card-body h5 {
+  font-family: Montserrat Alternates;
+  font-size: 32px;
+  color: #eb6e80;
+}
+.carte {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.carte:hover {
+  transform: scale(1.05);
+}
+.a:hover {
+  background-color: #ebb000;
+}
+.fa-shopping-cart {
+  color: #eb6e80;
+  margin-left: 1%;
+}
+.fa-comment {
+  color: #ebb000;
+}
+.fa-envelope {
+  color: #008f99;
+}
+.fa-comment:hover {
+  transform: scale(1.6);
+}
+.fa-envelope:hover {
+  transform: scale(1.6);
+}
+.fa-shopping-cart:hover {
+  transform: scale(1.6);
+}
+li {
+  color: black;
+  text-decoration: none;
+  font-family: Montserrat Alternates;
+}
+li:hover {
+  color: #ebb000;
+}
+a:hover {
+  text-decoration: none;
+  list-style: none;
+}
+.tri {
+  font-family: Montserrat Alternates;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.card-text p.card-text {
+  color: red;
+}
+#cartetwo img {
+  opacity: 0.4;
+}
+.progress-bar {
+  margin-top: 5%;
+}
+#gras {
+  font-weight: bold;
+}

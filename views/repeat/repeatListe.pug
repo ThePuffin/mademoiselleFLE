@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+   div#ExoRepetition
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 La liste des exercices de repétition
+                        a.btn.btn-info.mb-4(role='button', href='/backoffice/exercices/creationRepeat') Création d'un nouvel exercice
+                        table.table.table-hover
+                            thead
+                                tr
+                                    th(scope='col') Id
+                                    th(scope='col') Titre
+                                    th(scope='col') Unité liée
+                                    th(scope='col') Modification
+                                    th(scope='col') Suppression
+                            tbody
+                                tr
+                                    td(scope='row') 1
+                                    td Exercice sur les 'ans'
+                                    td Unité ans
+                                    td 
+                                        a.badge.badge-warning(href=`/exercice/modifierRepeat` role='button') Modification
+                                    td
+                                        a.badge.badge-danger(href=`/exercice/supprimerRepeat` role='button') Suppression

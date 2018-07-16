@@ -1,0 +1,172 @@
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+
+h2 {
+  font-family: Montserrat Alternates;
+  text-align: center;
+  margin-top: 5%;
+  color: #008f99;
+}
+
+.button {
+  margin-top: 8%;
+  margin-right: 2%;
+  font-family: Montserrat;
+}
+
+#blog {
+  background-color: #202020;
+  padding: 20px 0px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 18px;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  margin-bottom: 5%;
+}
+
+#blog .p {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: black;
+  white-space: initial;
+  text-overflow: fade;
+}
+
+#blog a {
+  color: white;
+}
+
+#blog .container-cards {
+  background-color: #202020;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#blog .card-deck .card {
+  border-color: #8f8547;
+}
+
+#blog .card-img-top {
+  width: 100%;
+  overflow: hidden;
+}
+
+#blog .card-body {
+  height: 11rem;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+#blog .card-footer {
+  padding: 10px;
+  background-color: #e4e3e3;
+  display: flex;
+  justify-content: space-between;
+}
+
+#blog .text-muted {
+  padding-top: 6px;
+}
+.reseaux-sociaux {
+  font-size: 19px;
+  color: grey;
+  text-align: center;
+  margin-top: 11px;
+}
+h5.card-title {
+  color: #eb6e80;
+  font-family: Montserrat Alternates;
+}
+
+#blog .nav-link {
+  color: white;
+  margin-bottom: 20px;
+  border: 1px solid #8f8547;
+  margin-left: 1rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #8f8547;
+}
+
+#blog .media img {
+  overflow: hidden;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+#blog .media {
+  margin: 20px 20px;
+}
+
+#blog .comments {
+  font-size: 14px;
+  color: #4a4949;
+  margin-bottom: 0;
+}
+.notation {
+  text-align: center;
+  color: #008f99;
+}
+.nom-client {
+  color: #ebb000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.card-body {
+  color: grey;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+.hovereffect {
+  width: 100%;
+  overflow: hidden;
+}
+.hovereffect img {
+  display: block;
+  transition: all 0.4s linear;
+}
+
+.hovereffect:hover img {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 576px) {
+  #blog .card-deck .card {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #blog .media {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #blog .media img {
+    display: block;
+    margin-left: 25%;
+    margin-bottom: 15px;
+  }
+}
+button.btn.btn-light {
+  margin-top: 7%;
+}

@@ -1,0 +1,27 @@
+#authAdmin h3 {
+  font-family: "MontserratAlternates-Light", sans-serif;
+  font-size: 2rem;
+  color: rgb(235, 176, 0);
+  margin-bottom: 0.7rem;
+}
+
+#authAdmin img.logo {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: block;
+  margin: auto;
+}
+
+#authAdmin input.form-control {
+  margin-top: 0.4rem;
+}
+
+#authAdmin a.MdpSmall {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+#authAdmin button.btn.btn-info {
+  display: block;
+  margin-top: 1.5rem;
+}

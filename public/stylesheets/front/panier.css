@@ -1,0 +1,76 @@
+body {
+  font-family: Montserrat;
+}
+img {
+  width: 100%;
+}
+#illustration {
+  display: none;
+}
+h1 {
+  margin-top: 4%;
+  font-family: Montserrat Alternates;
+  text-align: center;
+  color: #ebb000;
+}
+h2 {
+  font-family: Montserrat Alternates;
+  font-size: 28px !important;
+}
+i {
+  margin-left: 40% !important;
+}
+a {
+  color: black;
+}
+.title {
+  margin-bottom: 3%;
+}
+.thumbnails {
+  width: 85%;
+}
+.description {
+  font-size: 15px;
+}
+.total {
+  margin-top: 10%;
+}
+.listeAchat {
+  margin-top: 5%;
+  background-color: rgba(235, 235, 235, 0.2);
+  border-radius: 10px;
+  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-left: 6%;
+}
+.listTotal {
+  margin-left: 30%;
+}
+.card {
+  padding-bottom: 5%;
+  margin: auto;
+  border: 0 solid #e7e7e7;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 8%;
+}
+.btn-info {
+  background-color: rgb(0, 143, 153);
+  border-color: rgb(0, 143, 153);
+}
+.btn-warning {
+  background-color: rgb(235, 176, 0);
+  border-color: rgb(235, 176, 0);
+}
+.btn-danger {
+  background-color: rgb(225, 80, 61);
+  border-color: rgb(225, 80, 61);
+}
+.buttonPaiement {
+  margin-top: 6%;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  font-size: 24px;
+}

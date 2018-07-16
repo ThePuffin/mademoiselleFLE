@@ -1,0 +1,87 @@
+extends ../layout
+
+block content
+    div#Temoignages
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Avis
+                        .form-row.mb-3
+                            .form-group
+                                a.btn.btn-danger(role='button', href='/backoffice/temoignages/actif') Visibles
+                            .form-group
+                                a.btn.btn-info(role='button', href='/backoffice/temoignages/desactive') Non visibles
+                            .form-group
+                                a.btn.btn-warning(role='button', href='/backoffice/temoignages/') Tous
+
+                        .form-inline.mb-4
+                            .form-group
+                                label Barre de recherche
+                                <input class="form-control mr-sm-2" type="search" placeholder="Utilisateur recherché" aria-label="Search">
+                            .form-group.col-md-12
+                                label(for='XXXXX') Depuis
+                                select.form-control.col-md-10.mx-2
+                                    option 1 jour
+                                    option 1 semaine
+                                    option 1 mois
+                                    option Le début
+                                a.btn.btn-info(role='button', href='') Validation
+                        hr
+                        
+                        each testimony in testimonies
+                            .container
+                                .row
+                                    .col-md-7
+                                        h5 Prénom : 
+                                        p=testimony.User.firstname
+                                    .col-md-5
+                                        h5 Nom :
+                                        p=testimony.User.name
+                                .row
+                                    .col-md-7
+                                        h5 Commentaire :
+                                        p=testimony.comment
+                                    .col-md-5
+                                        h5 Note :
+                                        p=testimony.note
+                                .row
+                                    .col-md-7
+                                        h5 Avis du :
+                                        p=testimony.createdAt
+                                    .col-md-5
+                                        h5 Actif:
+                                        if testimony.active===true
+                                            button.btn.btn-danger.btn-sm.mt-2(data-id=testimony.id, data-actif=`${testimony.active}`, onclick='{changeStateFunction(this)}') Visible
+                                        else 
+                                            button.btn.btn-info.btn-sm.mt-2(data-id=testimony.id, data-actif=`${testimony.active}`, onclick='{changeStateFunction(this)}') Non visible
+                                        //- button.btn.btn-primary.btn-sm.mt-2(type='button')=testimony.active     
+                                .row
+                                    .col-md-12
+                                        h5 Voir son profil
+                                        a.btn.btn-info.btn-sm.mt-2(href=`/backoffice/users/user/${testimony.users_id}`) Voir
+                            hr
+ 
+        script.
+            function changeStateFunction(e) {
+                let chemin = location.pathname
+                let url 
+               if (chemin === "/backoffice/temoignages/desactive"){
+                   url = "desactive"
+               }
+               else if(chemin ==="/backoffice/temoignages/actif"){
+                   url = "actif"
+               }
+               else {
+                   url = "all"
+               }
+             
+                if (e.dataset.actif === "true"){
+                    window.location.href=(`/backoffice/temoignages/changeVisible/${e.dataset.id}/${url}`)
+                }
+                else {
+                    window.location.href=(`/backoffice/temoignages/changeNonVisible/${e.dataset.id}/${url}`)
+                }
+
+         
+            }

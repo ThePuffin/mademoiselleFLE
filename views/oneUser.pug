@@ -1,0 +1,43 @@
+extends ./layout
+
+block content
+    div#oneUsers
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3=`Profil de ${users.firstname} ${users.name}`
+                        .card(style='width: 20rem;')
+                            img(src=`${users.picture}`)
+                            ul.list-group.list-group-flush
+                                
+                                li.list-group-item
+                                    span.intitule Nom : 
+                                    span=`${users.name}`
+                                li.list-group-item
+                                    span.intitule Prénom : 
+                                    span=`${users.firstname}`
+                                li.list-group-item
+                                    span.intitule Pays : 
+                                    span=`${users.country}`
+                                li.list-group-item
+                                    span.intitule Skype : 
+                                    span=`${users.skype_id}`
+                            .card-body
+                                if users.active===true
+                                    a.btn.btn-danger.float-right(href=`/backoffice/users/desactive/${users.id}`) Suspendre
+                                else 
+                                    a.btn.btn-info.float-right(href=`/backoffice/users/active/${users.id}`) Réactiver          
+                    //- h2 Profil
+    //- img(src=`${users.picture}`)
+    //- p=users.name
+    //- p=users.firstname
+    //- p=users.country
+
+    //- p
+    //-     if users.active===false
+    //-         a.btn.btn-info( href=`/backoffice/users/active/${users.id}`) Suspendre
+    //-     else 
+    //-         a.btn.btn-info(href=`/backoffice/users/desactive/${users.id}`) Réactiver
+    
+        

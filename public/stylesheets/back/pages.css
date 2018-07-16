@@ -1,0 +1,322 @@
+#content.container-fluid {
+  background-color: rgb(250, 250, 250);
+}
+
+.card.border-light {
+  border: 0 solid rgb(231, 231, 231);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+#profilAdmin h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  font-size: 1.7rem;
+  color: rgb(255, 80, 61);
+  margin-bottom: 3rem;
+}
+
+#profilAdmin label {
+  color: rgb(255, 80, 61);
+}
+
+#profilAdmin .fa-user,
+#profilAdmin .fa-flag,
+#profilAdmin .fa-envelope {
+  color: rgb(235, 176, 0);
+}
+
+#profilAdmin a.btn.btn-primary {
+  background-color: rgb(255, 80, 61);
+  border-color: rgb(255, 80, 61);
+}
+
+#profilAdmin button.btn.btn-primary {
+  background-color: rgb(235, 176, 0);
+  border-color: rgb(235, 176, 0);
+}
+
+/*---------------------------------Partie Units --------------------------------*/
+
+#Units h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  font-size: 1.7rem;
+  color: rgb(235, 110, 128);
+  margin-bottom: 3rem;
+}
+
+#Units th {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 110, 128);
+}
+
+#Units td {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+}
+
+/*---------------------------------Partie Création Units + Modification Units--------------------------------*/
+#CreationUnits h3,
+#ModifUnits h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+
+  color: rgb(235, 110, 128);
+  margin-bottom: 3rem;
+}
+
+#CreationUnits label,
+#ModifUnits label {
+  font-family: "Montserrat", "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  color: rgb(235, 176, 0);
+}
+
+/*---------------------------------Partie Exercices --------------------------------*/
+#Exercices h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  font-size: 1.7rem;
+  color: rgb(0, 143, 153);
+  margin-bottom: 3rem;
+}
+
+#Exercices a.btn.btn-primary {
+  font-family: "MontserratAlternates-Light", sans-serif;
+  background-color: rgb(235, 176, 0);
+  border-color: rgb(235, 176, 0);
+}
+
+#Exercices a.btn.btn-secondary {
+  font-family: "MontserratAlternates-Light", sans-serif;
+  background-color: rgb(235, 110, 128);
+  border-color: rgb(235, 110, 128);
+}
+
+#Exercices img {
+  width: 10%;
+}
+
+/*---------------------------------Partie liste exercices Checkbox + création d'exo--------------------------------*/
+
+#ExoCheck h3,
+#CreaExoCheck h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 176, 0);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#ExoCheck th,
+#CreaExoCheck label {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 110, 128);
+}
+
+#ExoCheck td {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+}
+
+#ExoCheck table.table.table-hover :hover {
+  background-color: rgba(0, 143, 153, 0.05);
+}
+
+/*---------------------------------Partie liste exercices Répétition + création d'exo--------------------------------*/
+
+#ExoRepetition h3,
+#CreaExoRepet h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 110, 128);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#ExoRepetition th,
+#CreaExoRepet label {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 176, 0);
+}
+
+#ExoRepetition td {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+}
+
+#ExoRepetition table.table.table-hover :hover {
+  background-color: rgba(0, 143, 153, 0.05);
+}
+
+/*---------------------------------Partie Agenda --------------------------------*/
+
+#Agenda h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 176, 0);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#Agenda .timezone {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+#Agenda .timeblock {
+  background-color: rgb(235, 176, 0);
+  padding: 20%;
+}
+
+#Agenda .timezone-label {
+  font-size: 20px;
+  font-family: "MontserratAlternates-Bold", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/*---------------------------------Partie Commandes --------------------------------*/
+
+#Orders h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(255, 80, 61);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#Orders label {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 143, 153);
+}
+
+#Orders th {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(255, 80, 61);
+}
+
+#Orders td {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+}
+
+#Orders table.table.table-hover :hover {
+  background-color: rgba(255, 80, 61, 0.05);
+}
+
+/*---------------------------------Partie Feedbacks--------------------------------*/
+#Feedbacks h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 176, 0);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#Feedbacks label {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 143, 153);
+}
+
+#Feedbacks hr {
+  border-color: rgb(235, 176, 0);
+}
+
+#Feedbacks h5 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  font-size: 1.1em;
+  color: rgb(0, 143, 153);
+  margin-bottom: 0.1rem;
+}
+
+#Feedbacks p {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+/*---------------------------------Partie témoignages--------------------------------*/
+#Temoignages h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(0, 143, 153);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#Temoignages label {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 80, 61);
+}
+
+#Temoignages hr {
+  border-color: rgb(255, 80, 61);
+}
+
+#Temoignages h5 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  font-size: 1.1em;
+  color: rgb(255, 80, 61);
+  margin-bottom: 0.1rem;
+}
+
+#Temoignages p {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/*---------------------------------Partie Users--------------------------------*/
+#Users h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 110, 128);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#Users th {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 176, 0);
+}
+
+#Users td {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+}
+
+#Users label.form-check-label {
+  color: rgb(235, 110, 128);
+}
+
+/*---------------------------------Partie One Users--------------------------------*/
+#oneUsers img {
+  height: 30%;
+  width: 100%;
+}
+
+#oneUsers h3 {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 110, 128);
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#oneUsers .card {
+  margin: auto;
+  border: 0 solid #e7e7e7;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+#oneUsers span.intitule {
+  font-family: "MontserratAlternates-Regular", sans-serif;
+  color: rgb(235, 110, 128);
+  font-size: 0.9rem;
+}
+
+#oneUsers li.list-group-item {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.9rem;
+}

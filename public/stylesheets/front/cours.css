@@ -1,0 +1,43 @@
+img{
+    width: 100%
+}
+body {
+    font-family: Montserrat;
+}
+h1 {
+    font-family: Montserrat Alternates;
+    text-align: center
+}
+h2{
+    font-family: Montserrat Alternates;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+button{
+    font-size: 14px !important
+}
+h3 {
+    text-align: center;
+    font-family: Montserrat Alternates
+}
+.btn-warning{
+    margin-left: 35%
+}
+.info{
+    color: rgb(0,143,153);
+    background-color: white;
+    border-color: rgb(0,143,153);
+    font-size: 15px;
+}
+.marginRow {
+    margin-top: 5%
+}
+.marginPayant {
+    margin-bottom: 5%
+}
+.top {
+    margin-top: -40%
+}
+.cardone{
+    padding-bottom: 2%
+}

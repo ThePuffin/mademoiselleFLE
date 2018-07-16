@@ -1,0 +1,51 @@
+extends ./layout
+
+block content
+    if (messages.update)
+        .alert.alert-success.alert-dismissible.fade.show(role='alert')=messages.update
+            button.close(type='button', data-dismiss='alert', aria-label='Close')
+                span(aria-hidden='true') ×
+    div#profilAdmin
+        h3="Profil administrateur"
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        form(method="POST", action=`/backoffice/admin/${admin.id}`, enctype="multipart/form-data")
+                            .form-group.col-6
+                                .input-group
+                                    input#customFile.custom-file-input(type='file', name='picture', accept='image/*', capture='capture')
+                                    label.custom-file-label(for='customFile') Choisir une photo
+                                    small.form-text.text-muted Formats acceptés : PNG, JPG, PDF / Taille maximale :
+                            .form-group.col-6
+                                label Prénom
+                                .input-group
+                                    .input-group-prepend
+                                        span.input-group-text
+                                            span.fas.fa-user
+                                    input.form-control(type='text', name='firstname',value=admin.firstname,required)
+                            .form-group.col-6
+                                label Nom
+                                .input-group
+                                    .input-group-prepend
+                                        span.input-group-text
+                                            span.fas.fa-user
+                                    input.form-control(type='text', name='name', value=admin.name,required)
+                            .form-group.col-6
+                                label Pays d'origine
+                                .input-group
+                                    .input-group-prepend
+                                        span.input-group-text
+                                            span.fa.fa-flag
+                                    input.form-control(type='text', name="country", value=admin.country,required)
+                            .form-group.col-6
+                                label Adresse email
+                                .input-group
+                                    .input-group-prepend
+                                        span.input-group-text
+                                            span.fas.fa-envelope
+                                    input.form-control(type='email', name="email", value=admin.email)
+                            .form-group.col-6
+                                a.btn.btn-primary(href="#")  Changer de mot de passe
+                            .col.offset-md-4
+                                button.btn.btn-primary(type="submit") Enregistrer les modifications

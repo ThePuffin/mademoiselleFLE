@@ -1,0 +1,45 @@
+h5 {
+  color: grey;
+  font-family: Montserrat Alternates;
+}
+a {
+  font-family: Montserrat;
+  font-size: 12px;
+}
+#logofooter {
+  width: 70%;
+}
+#medium.d-block.mb-3.text-muted {
+  color: lightblue;
+}
+
+.col-12.col-md p {
+  text-align: center;
+  color: gainsboro;
+}
+a {
+  font-size: 12px;
+  font-family: Montserrat;
+}
+.fa-home {
+  width: 50px;
+}
+p {
+  color: black;
+  text-align: center;
+  font-size: 13px;
+}
+#up {
+  text-align: center;
+  text-decoration: none;
+}
+.fa-angle-double-up {
+  color: #eb6e80;
+  font-size: 200%;
+  font-size: 200%;
+  margin-top: 5%;
+}
+#up a {
+  color: #eb6e80;
+  margin-left: 5%;
+}

@@ -1,0 +1,45 @@
+#accueil.navbar.navbar-light.border-bottom
+    ul.navbar-nav.d-flex.flex-row
+      li.p-2.active
+        a.menu-toggle(href='#menu-toggle')
+          span.fas.fa-bars
+      li.p-2
+        span.fas.fa-search
+    //-début de la partie de la navbar qui se trouve tout à droite
+    ul.navbar-nav.d-flex.flex-row-reverse
+      //-menu déroulant sur le nom de Sabrina
+      li.nav-item.dropdown
+        a#navbarDropdownMenuLink.nav-link.dropdown-toggle.texteToggle(data-toggle='dropdown', href='#', aria-haspopup='true', aria-expanded='false') 
+          span.texteToggle Sabrina
+        //-menu déroulé
+        .dropdown-menu.dropdown-menu-right(aria-labelledby="navbarDropdownMenuLink")
+          a.dropdown-item(href='/backoffice/admin/1')
+            span.iconeDropdown.fas.fa-user
+            span.texteDropdown Profil
+          a.dropdown-item(href='#')
+            span.iconeDropdown.fas.fa-envelope
+            span.texteDropdown Messages
+          .dropdown-divider
+          a.dropdown-item(href='/admin/logout')
+            span.iconeDropdown.fas.fa-sign-out-alt
+            span.texteDropdown Se déconnecter
+      li
+        img.profile(src="/uploads/Sabrina.png", alt="")
+        //-Menu déroulé sous l'icone enveloppe
+      li.nav-item.dropdown.message
+        a.nav-link.texteToggle(data-toggle='dropdown', href='', role='button', aria-haspopup='true', aria-expanded='false') 
+          span.fas.fa-envelope
+        .dropdown-menu.dropdown-menu-right
+          a.dropdown-item(href='/backoffice/admin/1')
+            img.imageMessage(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1Rx0i34GmpCYqKwLnwVwrYRA_m3lUiBkqOZVU48G-d23umw8Sg", alt="")
+            span.texteDropdown Message de Rodrigo
+          .dropdown-divider
+          a.dropdown-item(href='#')
+            img.imageMessage(src="https://www.abtasty.com/content/uploads/Sophie-IANIRO_LK-profil-240x240.jpg", alt="")
+            span.texteDropdown Message de Paulina
+          .dropdown-divider
+          a.dropdown-item(href='#')
+            img.imageMessage(src="http://profileplugin.com/wp-content/uploads/upme/1444024111_harvey-2.jpg", alt="")
+            span.texteDropdown Message de Pablo
+      li.p-2.notification
+        span.fas.fa-bell

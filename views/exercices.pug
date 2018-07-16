@@ -1,0 +1,30 @@
+extends ./layout
+
+block content
+    div#Exercices
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Exercices
+                        .form-row.mx-auto
+                            .form-group.col-md-6.text-center
+                                img(src="/uploads/cochez.png", alt="")
+                            .form-group.col-md-6.text-center
+                                img(src="/uploads/megaphone.png", alt="")
+                            .form-row.mx-auto
+                            .form-group.col-md-6.text-center
+                                a.btn.btn-primary.px-5(href=`/backoffice/exercices/listeCheckbox` role='button') Création d'un exercice de type checkbox
+                            .form-group.col-md-6.text-center
+                                a.btn.btn-secondary.px-5(href=`/backoffice/exercices/listeRepeat` role='button') Création d'un exercice de type sons à répéter
+                        hr
+                        .form-row.mx-auto
+                            .form-group.col-md-6.text-center.mt-5
+                                img(src="/uploads/cours_par_niveaux.png", alt="")
+                            .form-group.col-md-6.text-center.mt-5
+                                img(src="/uploads/cours_par_niveaux.png", alt="")
+                        .form-row.mx-auto
+                            .form-group.col-md-6.text-center
+                                a.btn.btn-primary.px-5(href=`/backoffice/exercices/listeCheckbox` role='button') Liste des exercices de type checkbox
+                            .form-group.col-md-6.text-center
+                                a.btn.btn-secondary.px-5(href=`/backoffice/exercices/listeRepeat` role='button') Liste des exercices de type sons à répéter

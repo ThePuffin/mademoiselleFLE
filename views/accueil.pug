@@ -1,0 +1,46 @@
+extends ./layout
+
+block content
+    #accueil
+        h3 Bienvenue ! 
+        .row.mx-auto
+            .col-md-4.pb-2
+                .card.border-light
+                    .card-body
+                        div.flex-droite
+                            a(href='/backoffice/agenda')
+                                span.fas.fa-calendar-alt.fa-3x
+                            p.chiffreDroite.counter 5 
+                        p.texteDroite Séance individuelle à venir
+            .col-md-4.pb-2
+                .card.border-light
+                    .card-body
+                        div.flex-droite
+                            a(href='/backoffice/temoignages')
+                                span.fas.fa-comments.fa-3x
+                            p.chiffreDroite.counter 2 
+                        p.texteDroite Nouveaux feedbacks
+            .col-md-4.pb-2
+                .card.border-light
+                    .card-body
+                        div.flex-droite
+                            a(href='/backoffice/users')
+                                span.fas.fa-users.fa-3x
+                            p.chiffreDroite.counter 4
+                        p.texteDroite Nouveaux utilisateurs
+        .row.mx-auto
+            .col-md-12.pt-2.pb-2
+                .card.border-light
+                    .card-body 
+                        #chartdiv
+        .row.mx-auto
+            .col-md-6.pt-2.pb-5
+                .card.border-light
+                    .card-body
+                        canvas#barCharts
+                        
+            .col-md-6.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        div(style='width:100%;').mx-auto
+                            canvas#canvas

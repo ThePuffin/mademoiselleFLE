@@ -1,0 +1,34 @@
+div#content {
+  min-height: 600px;
+  padding-top: 10px;
+}
+.colorEnabled {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+articlesRow {
+  height: 150px;
+}
+articlesCol {
+  margin-top: 100px;
+  background-color: aqua;
+}
+.commentBorder {
+  display: block;
+  border: 3px, black, solid;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.commentDate {
+  display: block;
+  font-size: 10px;
+}
+#buttonDeleteComment {
+  margin-left: 80%;
+  margin-bottom: 100%;
+  position: absolute;
+  display: inline-block;
+  font-size: 10px;
+}
+.errorsForm {
+  color: red;
+}

@@ -1,0 +1,61 @@
+li {
+  list-style: none;
+}
+#illustration {
+  display: none;
+}
+p {
+  text-align: justify;
+  font-size: 16px;
+}
+h5,
+h3,
+p {
+  font-family: Montserrat Alternates;
+}
+h4 {
+  color: #eb6e80;
+}
+h3 {
+  color: #008f99;
+}
+.fa-envelope,
+.fa-comment,
+.fa-calendar-alt {
+  color: #008f99;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.fa-envelope:hover,
+.fa-comment:hover,
+.fa-calendar-alt:hover {
+  transform: scale(1.6);
+}
+
+h5 {
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+a.card-link {
+  text-decoration: none;
+  list-style: none;
+  color: grey;
+}
+#achetercecours,
+.fa-shopping-cart {
+  color: #ebb000;
+}
+.fa-shopping-cart,
+.fa-arrow-left {
+  margin-left: 1%;
+}
+#retourliste,
+.fa-arrow-left {
+  color: #eb6e80;
+}
+.fa-shopping-cart:hover,
+.fa-arrow-left:hover {
+  transform: scale(1.6);
+}

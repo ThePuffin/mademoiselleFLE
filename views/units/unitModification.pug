@@ -1,0 +1,50 @@
+extends ../layout
+
+block content
+
+    div#ModifUnits
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Modification d'une unité existante
+                        form(method="POST", action=`/backoffice/units/enregistrerModif/${unit.id}`, enctype="multipart/form-data")
+                            .form-row
+                                .form-group.col-md-6
+                                    label(for='XXXXX') Titre : 
+                                    input.form-control(type='text',name='title', value=unit.title, required="required")
+
+                                .form-group.col-md-3
+                                    label(for='XXXXX') Niveaux : 
+                                    //a modifier pour que cela affiche un onglet déroulant
+                                    input.form-control(type='text',name='units', value=unit.title, required="required")  
+                                .form-group.col-md-3     
+                                    label(for='XXXXX') Prix :
+                                    input.form-control(type='text',name='price', value=unit.price, required="required")
+
+
+                            .form-row
+                                .form-group.col-md-6        
+                                    label(for='XXXXX') Télécharger la miniature :
+                                    input.form-control(type='text',name='thumbnail', value=unit.thumbnail, required="required")  
+                                .form-group.col-md-6        
+                                    label(for='XXXXX') Lien vidéo :
+                                    input.form-control(type='text',name='video', value=unit.video, required="required")
+                                
+                            
+                            .form-row
+                                
+                                .form-group.col-md-6
+                                    label(for='XXXXX') Description courte :                     
+                                    input.form-control(type='text',name='description', value=unit.description, required="required")
+                                .form-group.col-md-6        
+                                    label(for='XXXXX') Badge :
+                                    input.form-control(type='text',name='badge', value=unit.badge, required="required")
+
+                            .form-row
+                                .form-group.col-md-12        
+                                    label(for='XXXXX') Description longue :
+                                    input.form-control(type='textarea',name='video', value=unit.description, rows="2", required="required") 
+                                    
+                            button.btn.btn-info.float-right(type="submit") Validation
+

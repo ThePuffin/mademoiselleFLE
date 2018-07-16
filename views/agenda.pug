@@ -1,0 +1,29 @@
+extends ./layout
+
+block content
+    #Agenda
+        .row.mx-auto
+                .col-md-12.pt-2.pb-5
+                    .card.border-light
+                        .card-body 
+                            h3 Planning
+                            .timezone-wrapper
+                                .timezone
+                                    .row.mx-auto
+                                        .col-md-4.pt-2.pb-5
+                                            .timeblock
+                                                span.timezone-label Lyon
+                                                span.current
+                                        .col-md-4.pt-2.pb-5
+                                            .timeblock
+                                                span.timezone-label New York
+                                                span.eastern
+                                        .col-md-4.pt-2.pb-5
+                                            .timeblock
+                                                span.timezone-label Los Angeles
+                                                span.pacific
+                            .row.mx-auto
+                                .col-md-12.pt-2.pb-5
+                                    input#input(width='412')
+block js
+    script(src="/javascripts/datetimepicker.js")

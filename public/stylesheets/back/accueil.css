@@ -1,0 +1,141 @@
+/* -------------------------Sidebar------------------------ */
+#accueil .title {
+  font-family: "MontserratAlternates-ExtraLight", sans-serif;
+  color: rgb(87, 101, 116);
+  padding-left: 0.5rem;
+}
+/* -------------------------Accueil------------------------ */
+
+#accueil h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  color: rgb(255, 80, 61);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#accueil .fa-home,
+#accueil .fa-user,
+#accueil .fa-shopping-cart {
+  color: rgb(255, 80, 61);
+}
+
+#accueil .fa-edit,
+#accueil .fa-users {
+  color: rgb(235, 110, 128);
+}
+
+#accueil .fa-pencil-alt,
+#accueil .fa-comments {
+  color: rgb(0, 143, 153);
+}
+
+#accueil .fa-calendar-alt,
+#accueil .fa-clipboard-list {
+  color: rgb(235, 176, 0);
+}
+
+#accueil .fa-bars {
+  color: rgb(255, 80, 61);
+  margin-right: 1rem;
+}
+
+#accueil .fa-search {
+  color: rgb(0, 143, 153);
+}
+
+#accueil .fa-envelope {
+  color: rgb(0, 143, 153);
+  margin-left: 1rem;
+}
+
+#accueil .fa-bell {
+  color: rgb(235, 176, 0);
+}
+
+#accueil small {
+  color: rgb(0, 143, 153);
+}
+
+#accueil img.profile {
+  overflow: hidden;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+#accueil .flex-droite {
+  color: rgb(87, 101, 116);
+  display: flex;
+  justify-content: space-between;
+}
+
+#accueil p.chiffreDroite {
+  font-size: 2rem;
+}
+
+#accueil p.texteDroite {
+  text-align: right;
+  color: rgb(87, 101, 116);
+}
+
+#accueil .dropdown-menu {
+  position: absolute;
+  margin-top: 9px;
+}
+
+#accueil span.texteDropdown {
+  font-family: "MontserratAlternates-ExtraLight", sans-serif;
+  color: rgb(87, 101, 116);
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+#accueil .iconeDropdown {
+  color: rgb(255, 80, 61);
+  margin-left: 0;
+}
+
+#accueil .texteToggle {
+  color: rgb(255, 80, 61);
+}
+
+#accueil img.logo {
+  width: 75%;
+  display: block;
+  margin: 15px auto;
+}
+
+#accueil img.imageMessage {
+  overflow: hidden;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+#canvas {
+  background-color: white;
+  border-radius: 6px;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  #accueil img.logo {
+    width: 110px;
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #accueil img.logo {
+    width: 90px;
+    margin: 15px auto;
+  }
+}

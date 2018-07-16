@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title= "BackOffice Example"
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js', type='text/javascript')
+    link(href='https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css', rel='stylesheet', type='text/css')
+    block css
+      link(rel="stylesheet", href="/stylesheets/main.css")
+      link(rel="stylesheet", href="/stylesheets/back/pages.css")
+      link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,800|Montserrat:400,500,600,700")
+      link(rel='stylesheet', href='https://www.amcharts.com/lib/3/plugins/export/export.css', type='text/css', media='all')
+
+  body
+    .container-fluid
+      .row
+        .col-2.border-right
+          include partialBack/nav.pug
+        .col-10
+          include partialBack/header.pug
+          div#content.container-fluid
+            block content
+          include partialBack/footer.pug    
+    script(defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js')
+    script(src='https://www.amcharts.com/lib/3/ammap.js')
+    script(src='https://www.amcharts.com/lib/3/maps/js/worldLow.js')
+    script(src='https://www.amcharts.com/lib/3/themes/none.js')
+    script(src='https://www.amcharts.com/lib/3/plugins/export/export.min.js')
+
+    //- time
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.9/moment-timezone-with-data-2010-2020.min.js')
+    script(src='/javascripts/agenda.js')
+    script(src='/javascripts/dashboard.js')
+    block js

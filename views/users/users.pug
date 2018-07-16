@@ -1,0 +1,78 @@
+extends ../layout
+
+
+
+block content
+    div#Users
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Utilisateurs
+                        
+                        .form-row.mb-3
+                            .form-group
+                                a.btn.btn-info(role='button', href='/backoffice/users/actif') Activés
+                            .form-group
+                                a.btn.btn-danger(role='button', href='/backoffice/users/off') Supendus
+                            .form-group
+                                a.btn.btn-warning(role='button', href='/backoffice/users') Tous
+
+                        table.table.table-hover
+                            thead
+                                tr
+                                    th(scope='col') Profil utilisateur
+                                    th(scope='col') Nom
+                                    th(scope='col') Prénom
+                                    th(scope='col') Langue natale
+                                    th(scope='col') Age
+                                    th(scope='col') Pays d'origine
+                                    th(scope='col') Statut
+                                    
+            
+                            tbody
+                                each user in users
+                                    tr
+                                        td
+                                            button.btn.btn-sucess(data-id=user.id,onclick='{voir(this)}') Voir
+                                        td=user.name
+                                        td=user.firstname 
+                                        td=user.native_language
+                                        td=user.age
+                                        td=user.country
+                                        td
+                                            if user.active===true
+                                                button.btn.btn-danger.float-right(data-id=user.id, data-name=user.name, data-firstname=user.firstname,onclick='{desactiveFunction(this)}') Suspendre
+                                            else 
+                                                button.btn.btn-info.float-right(data-id=user.id, data-name=user.name, data-firstname=user.firstname,onclick='{activeFunction(this)}') Réactiver
+        script.
+            function desactiveFunction(e) {
+            const name =  e.dataset.name
+            const firstname =  e.dataset.firstname
+            let ok;
+            ok = confirm(`Voulez-vous desactivé ${firstname} ${name}?`);
+            if (ok === true) {
+                const id =  e.dataset.id
+                window.location.href=(`/backoffice/users/desactiveList/${id}`)
+            } 
+            }
+
+            function activeFunction(e) {
+            const name =  e.dataset.name
+            const firstname =  e.dataset.firstname
+            let ok;
+            ok = confirm(`Voulez-vous réactivé ${firstname} ${name}?`);
+            if (ok === true) {
+                const id =  e.dataset.id
+                window.location.href=(`/backoffice/users/activeList/${id}`)
+            } 
+            }
+
+            function voir(e){
+                //- alert("coucou")
+                const id = e.dataset.id
+                window.location.href=`/backoffice/users/user/${id}`
+            }
+
+
+            //(onclick='{confirm("vous allez de réactivé cet utilisateur" )}')

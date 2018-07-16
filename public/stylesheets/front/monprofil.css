@@ -1,0 +1,226 @@
+img {
+    width: 100%;
+}
+
+#illustration {
+    display: none;
+}
+
+h1 {
+    text-align: left;
+    color: #eb6e80;
+    font-family: Montserrat Alternates;
+    margin-top: 2%;
+}
+
+button {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Montserrat Alternates;
+    color: #ebb000;
+    margin-top: 10%;
+}
+
+.txt {
+    text-align: right;
+}
+
+h6 {
+    color: #1abc9c;
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 190%;
+}
+
+p {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.thumbnail p {
+    font-family: Montserrat Bold;
+    text-align: center;
+}
+
+#end {
+    opacity: 0.4;
+}
+
+#badge {
+    width: 50%;
+}
+
+#badge .a {
+    text-align: center;
+}
+
+.userTitre {
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.userText {
+    text-align: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-profil {
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 500px;
+    width: 250px;
+    height: 250px;
+}
+
+/* calendrier */
+
+* {
+    box-sizing: border-box;
+}
+
+.ul {
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+.body {
+    font-family: Montserrat, sans-serif;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #ebb000;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.month ul li {
+    color: #eb6e80;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    list-style: none;
+}
+
+.month ul li.mois {
+    color: #eee;
+    font-size: 90%;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.hours li {
+    display: inline;
+    margin-right: 40px;
+}
+
+.hours li .active {
+    padding: 5px;
+    color: #1abc9c !important;
+    font-weight: bold;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 29px;
+    color: #ebb000;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Add media queries for smaller screens */
+
+@media screen and (max-width: 720px) {
+    .weekdays .li,
+    .days .li {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays .li,
+    .days .li {
+        width: 12.5%;
+    }
+    .days .li .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays .li,
+    .days .li {
+        width: 12.2%;
+    }
+}
+
+/* scrolling part */
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.img-thumbnail {
+    display: inline-block;
+}
+
+#logopage {
+    width: 20%;
+}

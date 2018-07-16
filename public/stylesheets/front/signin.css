@@ -1,0 +1,36 @@
+img {
+  width: 100%;
+}
+#illustration {
+  display: none;
+}
+
+.row {
+  margin-top: 1%;
+}
+body {
+  font-family: Montserrat Alternates;
+}
+h2 {
+  color: rgba(0, 143, 153, 0.7);
+  font-family: Montserrat;
+}
+h1 {
+  margin-left: 5%;
+  color: grey;
+  margin-bottom: 1%;
+}
+h2 {
+  color: rgba(0, 143, 153, 0.7);
+  font-family: "Montserrat Alternates";
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+button {
+  margin-top: 5%;
+  margin-left: 11%;
+}
+.btn-light {
+  background-color: #eb6e80;
+  color: white;
+}

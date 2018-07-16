@@ -1,0 +1,56 @@
+extends ../layout
+
+block content
+
+    div#CreationUnits
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Création d'une nouvelle unité
+                        
+                        form(method="POST", action="/backoffice/units/enregistrer", enctype="multipart/form-data")
+                            .form-row
+                                .form-group.col-md-6
+                                    label(for='XXXXX') Titre :  
+                                    input.form-control(type='text',name='title', placeholder='titre', required="required")  
+                                .form-group.col-md-3
+                                    label(for='XXXXX') Niveaux : 
+                                    input.form-control(type='text',name='Level', placeholder='Niveau', required="required")
+                                .form-group.col-md-3     
+                                    label(for='XXXXX') Prix :
+                                    input.form-control(type='text',name='price', placeholder='prix', required="required") 
+
+                            .form-row
+                                .form-group.col-md-6        
+                                    label(for='XXXXX') Télécharger une miniature :
+                                    input.form-control(type='text',name='thumbnail', placeholder='thumbnail', required="required")  
+                                .form-group.col-md-6        
+                                    label(for='XXXXX') Lien vidéo :
+                                    input.form-control(type='text',name='video', placeholder='lien vidéo', required="required")     
+
+                            .form-row
+                                .form-group.col-md-6
+                                    label(for='XXXXX') Description courte                      
+                                    input.form-control(type='text',name='description', placeholder='description', required="required")
+
+                                .form-group.col-md-6        
+                                    label(for='XXXXX') Badge
+                                    input.form-control(type='text',name='badge', placeholder='badge', required="required")
+   
+                                .form-row   
+                                .form-group.col-md-12
+                                    label(for='XXXXX') Description courte                      
+                                    input.form-control(type='textarea', rows="2",name='description', placeholder='description', required="required")
+
+                            button.btn.btn-info.float-right(type="submit") Validation
+                            button.btn.btn-primary.float-left(onclick='{previsualiser()}') Prévisualiser
+            
+            
+            
+        script.
+            
+            function previsualiser(){
+                //- alert("coucou")
+                window.location.href=`/backoffice/units/previsualiser`
+            }

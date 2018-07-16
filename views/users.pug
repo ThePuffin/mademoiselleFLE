@@ -1,0 +1,34 @@
+extends ./layout
+
+block content
+    div#Users
+        .row.mx-auto
+            .col-md-12.pt-2.pb-5
+                .card.border-light
+                    .card-body 
+                        h3 Listes des utilisateurs
+                        
+                        .form-row.mb-3
+                            .form-group
+                                a.btn.btn-info(role='button', href='/backoffice/users/actif') Activé
+                            .form-group
+                                a.btn.btn-danger(role='button', href='/backoffice/users/off') Supendu
+                            .form-group
+                                a.btn.btn-warning(role='button', href='/backoffice/users') Tous
+
+                        table.table.table-hover
+                            thead
+                                tr
+                                    th(scope='col') Id
+                                    th(scope='col') Nom
+                                    th(scope='col') Prénom
+                                    th(scope='col') Profil utilisateur
+            
+                            tbody
+                                each user in users
+                                    tr
+                                        td=user.id
+                                        td=user.name
+                                        td=user.firstname 
+                                        td
+                                            a.badge.badge-info(href=`/backoffice/users/user/${user.id}`) Voir

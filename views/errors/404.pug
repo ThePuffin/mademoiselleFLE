@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= "Page Erreur 404"
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+    link(rel="stylesheet", href="/stylesheets/main.css")
+    link(rel="stylesheet", href="/stylesheets/errors.css")
+
+
+  body
+    #error404
+      .jumbotron
+        .flex-centrer
+          img.logo(src="/uploads/logoMlleFle.png", alt="Logo du site Mademoiselle FLE")
+          h3 Je pense que tu as du t'égarer, car cette page est introuvable :'(
+          hr.my-4
+          a.btn.btn-info(href='/', role='button') Retour à l'accueil
